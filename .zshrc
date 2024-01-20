@@ -105,8 +105,8 @@ alias master="git add .; git stash; git checkout master; git pull origin master;
 alias main="git add .; git stash; git checkout main; git pull origin main;"
 alias stash="git stash"
 alias pop="git stash pop"
-
 alias fixup="git add .;git commit --amend --no-edit"
+alias clean="git reset --hard HEAD && git clean -f"
 
 function push {
     if [[ `git branch --show-current` != "main" ]]; then
