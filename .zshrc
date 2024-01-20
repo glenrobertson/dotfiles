@@ -122,6 +122,8 @@ function pushf {
 
 # ALIASES
 alias subl="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
+# allow for "code ." alias
+export PATH="/Applications/Visual Studio Code.app/Contents/Resources/app/bin:$PATH"
 
 # NODE
 export PATH="/opt/homebrew/opt/node@16/bin:$PATH"
